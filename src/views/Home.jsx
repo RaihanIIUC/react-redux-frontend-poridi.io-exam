@@ -11,8 +11,6 @@ function Home() {
   const  {clients} = useSelector((store) => store.clientStore);
    const [type, setType] = useState('ONLINE');
 
-  console.log(clients,type,);
-
 
   useEffect(() => {
     dispatch(requestClientList(type));
